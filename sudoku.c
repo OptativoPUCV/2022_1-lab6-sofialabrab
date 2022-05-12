@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n)
 {
-  int i,j,k,p, i2, j2;
+  int i,j,k,p;
   int numcomprob;
   int * comprobacion = (int *)calloc(10, sizeof(int));
   
