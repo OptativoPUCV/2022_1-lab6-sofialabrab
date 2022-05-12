@@ -43,7 +43,14 @@ void print_node(Node* n){
     printf("\n");
 }
 
-int is_valid(Node* n){
+int is_valid(Node* n)
+{
+  int i,j,k,p, i2, j2;
+  int numcomprob;
+  int * comprobacion = (int *)calloc(10, sizeof(int));
+  
+  
+  
 
     return 1;
 }

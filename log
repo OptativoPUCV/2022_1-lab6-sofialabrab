@@ -4,3 +4,35 @@ Thu May 12 15:23:50 UTC 2022:
  tests:  2|4
 total_score: 15/70
 28e83e8
+Thu May 12 16:06:08 UTC 2022: 
+ sudoku.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:50:9: error: unused variable ‘comprobacion’ [-Werror=unused-variable]
+   int * comprobacion = (int *)calloc(10, sizeof(int));
+         ^~~~~~~~~~~~
+sudoku.c:49:7: error: unused variable ‘numcomprob’ [-Werror=unused-variable]
+   int numcomprob;
+       ^~~~~~~~~~
+sudoku.c:48:20: error: unused variable ‘j2’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+                    ^~
+sudoku.c:48:16: error: unused variable ‘i2’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+                ^~
+sudoku.c:48:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+             ^
+sudoku.c:48:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+           ^
+sudoku.c:48:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+         ^
+sudoku.c:48:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   int i,j,k,p, i2, j2;
+       ^
+cc1: all warnings being treated as errors
+Compilation failed
+3b260ad
