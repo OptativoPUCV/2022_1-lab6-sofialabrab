@@ -707,3 +707,16 @@ sudoku.c:153:42: error: return makes integer from pointer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 0c3cd85
+Fri May 13 15:08:05 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:153:53: error: expected ‘)’ before ‘return’
+       if(n->sudo[i][j] != 0 && (n->sudo[i][j] != 1) return NULL;
+                                                     ^~~~~~
+sudoku.c:155:5: error: expected expression before ‘}’ token
+     }
+     ^
+Compilation failed
+fa23c5e
