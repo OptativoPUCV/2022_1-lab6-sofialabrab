@@ -171,19 +171,20 @@ Node* DFS(Node* initial, int* cont)
     else
     {
       List* l=get_adj_nodes(n);
-       Node* adj=first(l);
-       while(adj)
-       {
-          push(S,adj);
-          adj=next(l);
-          *cont = *cont + 1;
-       }
+      Node* adj=first(l);
+      while(adj)
+      {
+        push(S,adj);
+        adj=next(l);
+        *cont = *cont + 1;
+      }
+      free(n);
       
     }
      
   }
 
-  //return n; 
+  
   return NULL;
 
 }
