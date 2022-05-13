@@ -67,7 +67,8 @@ int is_valid(Node* n)
       if(numcomprob == 1) return 0;
     }  
     
-  }*/
+  }
+*/
   k = 0;
   while(k < 9)
   {
