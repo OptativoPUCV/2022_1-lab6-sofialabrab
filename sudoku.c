@@ -157,7 +157,7 @@ Node* DFS(Node* initial, int* cont)
   }
 
   return n; */ 
-  return null;
+  return NULL;
 
 }
 
