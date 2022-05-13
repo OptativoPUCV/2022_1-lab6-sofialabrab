@@ -79,3 +79,37 @@ sudoku.c:48:11: error: unused variable ‘k’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d5d0091
+Fri May 13 01:39:25 UTC 2022: 
+ sudoku.c | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:11: error: unused variable ‘comprobacion’ [-Werror=unused-variable]
+     int * comprobacion = (int *)calloc(10, sizeof(int));
+           ^~~~~~~~~~~~
+sudoku.c:48:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   int i,j,k,p;
+             ^
+sudoku.c:48:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   int i,j,k,p;
+           ^
+sudoku.c: In function ‘DFS’:
+sudoku.c:109:11: error: ‘Node {aka struct <anonymous>}’ has no member named ‘visited’
+      if(!n->visited){
+           ^~
+sudoku.c:110:10: error: implicit declaration of function ‘print_tag’; did you mean ‘print_node’? [-Werror=implicit-function-declaration]
+          print_tag(n); n->visited=1;
+          ^~~~~~~~~
+          print_node
+sudoku.c:110:25: error: ‘Node {aka struct <anonymous>}’ has no member named ‘visited’
+          print_tag(n); n->visited=1;
+                         ^~
+sudoku.c:120:10: error: expected expression before ‘Node’
+   return Node;
+          ^~~~
+sudoku.c:123:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+5877eac
