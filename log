@@ -818,3 +818,9 @@ sudoku.c:152:3: error: format not a string literal and no format arguments [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 4daf798
+Fri May 13 15:24:18 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|1
+total_score: 60/70
+2278c33
