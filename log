@@ -597,3 +597,17 @@ Fri May 13 02:29:25 UTC 2022:
  tests:  8|1
 total_score: 60/70
 b011e3e
+Fri May 13 02:34:55 UTC 2022: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:175:17: error: statement with no effect [-Werror=unused-value]
+       while(adj)n
+                 ^
+sudoku.c:176:7: error: expected ‘;’ before ‘{’ token
+       {
+       ^
+cc1: all warnings being treated as errors
+Compilation failed
+5c4c55a
