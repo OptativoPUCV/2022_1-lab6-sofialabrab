@@ -579,3 +579,9 @@ sudoku.c:160:7: error: unused variable ‘estado’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e40ed65
+Fri May 13 02:26:08 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|1
+total_score: 60/70
+594633a
