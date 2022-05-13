@@ -168,19 +168,15 @@ Node* DFS(Node* initial, int* cont)
     *cont = *cont - 1;
     estado = is_final(n);
     if(estado == 1) return n;
-    else
+    List* l=get_adj_nodes(n);
+    Node* adj=first(l);
+    while(adj)
     {
-      List* l=get_adj_nodes(n);
-      Node* adj=first(l);
-      while(adj)
-      {
-        push(S,adj);
-        adj=next(l);
-        *cont = *cont + 1;
-      }
-      free(n);
-      
+      push(S,adj);
+      adj=next(l);
+      *cont = *cont + 1;
     }
+    free(n);
      
   }
 
