@@ -782,3 +782,14 @@ Fri May 13 15:13:02 UTC 2022:
  tests:  8|1
 total_score: 60/70
 0e41888
+Fri May 13 15:18:50 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:153:24: error: comparison between pointer and integer [-Werror]
+       if(n->sudo[i][j] == NULL) return 2;
+                        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+e6c2328
