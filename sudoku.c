@@ -165,6 +165,7 @@ Node* DFS(Node* initial, int* cont)
   {
     Node* n= top(S); 
     pop(S);
+    cont--;
     estado = is_final(n);
     if(estado == 1) return n;
     else
