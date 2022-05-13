@@ -676,3 +676,20 @@ sudoku.c:152:53: error: return makes integer from pointer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 8924596
+Fri May 13 15:06:41 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:148:11: error: multi-character character constant [-Werror=multichar]
+   if(n == 'NULL') return NULL;
+           ^~~~~~
+sudoku.c:148:8: error: comparison between pointer and integer [-Werror]
+   if(n == 'NULL') return NULL;
+        ^~
+sudoku.c:148:26: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+   if(n == 'NULL') return NULL;
+                          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+78bd0a9
