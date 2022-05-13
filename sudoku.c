@@ -149,6 +149,8 @@ int is_final(Node* n)
     printf("Final");
     return 2;
   } 
+  printf("\n");
+  printf("\n");
   for(int i = 0; i < 9; i++)
   {
     for(int j = 0; j < 9; j++)
