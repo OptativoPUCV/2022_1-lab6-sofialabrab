@@ -150,7 +150,7 @@ int is_final(Node* n)
   {
     for(int j = 0; j < 9; j++)
     {
-      if(n->sudo[i][j] != 0 && n->sudo[i][j] != 1) return NULL;
+      if(n->sudo[i][j] == 'NULL') return 2;
       if(n->sudo[i][j]  == 0) return 0;
     }   
   }
@@ -169,6 +169,7 @@ Node* DFS(Node* initial, int* cont)
     pop(S);
     *cont = *cont - 1;
     estado = is_final(n);
+    if(estado == 2) return NULL;
     if(estado == 1) return n;
     else
     {
