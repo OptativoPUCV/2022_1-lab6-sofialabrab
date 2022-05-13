@@ -78,7 +78,6 @@ int is_valid(Node* n)
     }  
     
   }
-  */
   k = 0;
   while(k < 9)
   {
