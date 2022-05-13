@@ -142,7 +142,7 @@ Node* DFS(Node* initial, int* cont)
      }
   }*/
 
-  return n;  
+ // return n;  
   
 }
 
