@@ -46,15 +46,20 @@ void print_node(Node* n){
 int is_valid(Node* n)
 {
   int i,j,k,p;
-  /*int numcomprob;
-  //int * comprobacion = (int *)calloc(10, sizeof(int));
+
+  int * comprobacion = (int *)calloc(10, sizeof(int));
   for(i = 0; i < 9; i++)
   {
     int * comprobacion = (int *)calloc(10, sizeof(int));
     for(j = 0; j < 9; j++)
     {
       numcomprob = n->sudo[i][j];
-      if(numcomprob == 1) return 0;
+      if(comprobacion[numcomprob] == 1) return 0;
+      else 
+      {
+        comprobacion[numcomprob] = 1;
+      }
+      
     }  
     
   }
@@ -63,12 +68,16 @@ int is_valid(Node* n)
     for(j = 0; j < 9; j++)
     {
       int * comprobacion = (int *)calloc(10, sizeof(int));
-      numcomprob = n->sudo[i][j];
-      if(numcomprob == 1) return 0;
+      numcomprob = n->sudo[j][i];
+      if(comprobacion[numcomprob] == 1) return 0;
+      else 
+      {
+        comprobacion[numcomprob] = 1;
+      }
     }  
     
   }
-*/
+  */
   k = 0;
   while(k < 9)
   {
@@ -76,17 +85,21 @@ int is_valid(Node* n)
     {
       i=3*(k/3) + (p/3) ;
       j=3*(k%3) + (p%3) ;
-       printf("%d ",n->sudo[i][j]);
-      if(p%3 == 2) printf("\n");
+      int * comprobacion = (int *)calloc(10, sizeof(int));
+      numcomprob = n->sudo[j][i];
+      if(comprobacion[numcomprob] == 1) return 0;
+      else 
+      {
+        comprobacion[numcomprob] = 1;
+      }
+   
     }
-
-      
+    k++; 
   }
   
   
-  
 
-    return 1;
+  return 1;
 }
 
 
