@@ -55,10 +55,13 @@ int is_valid(Node* n)
     for(j = 0; j < 9; j++)
     {
       numcomprob = n->sudo[i][j];
-      if(comprobacion[numcomprob] == 1) return 0;
-      else 
+      if(numcomprob != 0)
       {
-        comprobacion[numcomprob] = 1;
+        if(comprobacion[numcomprob] == 1) return 0;
+        else 
+        {
+          comprobacion[numcomprob] = 1;
+        }
       }
       
     }  
@@ -70,10 +73,13 @@ int is_valid(Node* n)
     {
       int * comprobacion = (int *)calloc(10, sizeof(int));
       numcomprob = n->sudo[j][i];
-      if(comprobacion[numcomprob] == 1) return 0;
-      else 
+      if(numcomprob != 0)
       {
-        comprobacion[numcomprob] = 1;
+        if(comprobacion[numcomprob] == 1) return 0;
+        else 
+        {
+          comprobacion[numcomprob] = 1;
+        }
       }
     }  
     
@@ -87,10 +93,13 @@ int is_valid(Node* n)
       j=3*(k%3) + (p%3) ;
       int * comprobacion = (int *)calloc(10, sizeof(int));
       numcomprob = n->sudo[j][i];
-      if(comprobacion[numcomprob] == 1) return 0;
-      else 
+      if(numcomprob != 0)
       {
-        comprobacion[numcomprob] = 1;
+        if(comprobacion[numcomprob] == 1) return 0;
+        else 
+        {
+          comprobacion[numcomprob] = 1;
+        }
       }
    
     }
