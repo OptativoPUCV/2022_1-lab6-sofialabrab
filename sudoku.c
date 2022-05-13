@@ -107,18 +107,18 @@ Node* DFS(Node* initial, int* cont)
   while(!is_empty(S)){
      Node* n= top(S); pop(S);
      if(!n->visited){
-         print_tag(n); n->visited=1;
+        // print_tag(n); n->visited=1;
      }else continue;
      List* l=get_adj_nodes(n);
      Node* adj=first(l);
-     while(adj){
+     while(adj)
+     {
         push(S,adj);
         adj=next(l);
      }
   }
 
-  return Node;
-  
+  return n;  
   
 }
 

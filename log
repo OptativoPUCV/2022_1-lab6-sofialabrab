@@ -113,3 +113,31 @@ sudoku.c:123:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 5877eac
+Fri May 13 01:40:43 UTC 2022: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:11: error: unused variable ‘comprobacion’ [-Werror=unused-variable]
+     int * comprobacion = (int *)calloc(10, sizeof(int));
+           ^~~~~~~~~~~~
+sudoku.c:48:13: error: unused variable ‘p’ [-Werror=unused-variable]
+   int i,j,k,p;
+             ^
+sudoku.c:48:11: error: unused variable ‘k’ [-Werror=unused-variable]
+   int i,j,k,p;
+           ^
+sudoku.c: In function ‘DFS’:
+sudoku.c:109:11: error: ‘Node {aka struct <anonymous>}’ has no member named ‘visited’
+      if(!n->visited){
+           ^~
+sudoku.c:121:10: error: ‘n’ undeclared (first use in this function)
+   return n;
+          ^
+sudoku.c:121:10: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:123:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+fcc7b8b
