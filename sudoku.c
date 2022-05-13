@@ -69,9 +69,9 @@ int is_valid(Node* n)
   }
   for(i = 0; i < 9; i++)
   {
+      int * comprobacion = (int *)calloc(10, sizeof(int));
     for(j = 0; j < 9; j++)
     {
-      int * comprobacion = (int *)calloc(10, sizeof(int));
       numcomprob = n->sudo[j][i];
       if(numcomprob != 0)
       {
