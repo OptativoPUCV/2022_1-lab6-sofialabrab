@@ -79,7 +79,7 @@ int is_valid(Node* n)
     
   }
   k = 0;
-  while(k < 9)
+  while(k < 3)
   {
     for(p=0;p<9;p++)
     {
