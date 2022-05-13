@@ -646,3 +646,33 @@ sudoku.c:152:43: error: return makes integer from pointer without a cast [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 20ac8f9
+Fri May 13 15:06:00 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:152:32: error: multi-character character constant [-Werror=multichar]
+       if(strcmp(n->sudo[i][j], 'NULL') == 0) return NULL;
+                                ^~~~~~
+sudoku.c:152:17: error: passing argument 1 of ‘strcmp’ makes pointer from integer without a cast [-Werror=int-conversion]
+       if(strcmp(n->sudo[i][j], 'NULL') == 0) return NULL;
+                 ^
+In file included from test.c:3:0:
+/usr/include/string.h:136:12: note: expected ‘const char *’ but argument is of type ‘int’
+ extern int strcmp (const char *__s1, const char *__s2)
+            ^~~~~~
+In file included from test.c:5:0:
+sudoku.c:152:32: error: passing argument 2 of ‘strcmp’ makes pointer from integer without a cast [-Werror=int-conversion]
+       if(strcmp(n->sudo[i][j], 'NULL') == 0) return NULL;
+                                ^~~~~~
+In file included from test.c:3:0:
+/usr/include/string.h:136:12: note: expected ‘const char *’ but argument is of type ‘int’
+ extern int strcmp (const char *__s1, const char *__s2)
+            ^~~~~~
+In file included from test.c:5:0:
+sudoku.c:152:53: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       if(strcmp(n->sudo[i][j], 'NULL') == 0) return NULL;
+                                                     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8924596
