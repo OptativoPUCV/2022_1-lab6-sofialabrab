@@ -337,3 +337,21 @@ sudoku.c:161:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 6a18891
+Fri May 13 02:00:23 UTC 2022: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:81:4: error: expected expression before ‘/’ token
+   */
+    ^
+sudoku.c:51:9: error: unused variable ‘comprobacion’ [-Werror=unused-variable]
+   int * comprobacion = (int *)calloc(10, sizeof(int));
+         ^~~~~~~~~~~~
+sudoku.c: In function ‘DFS’:
+sudoku.c:162:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+6bfecab

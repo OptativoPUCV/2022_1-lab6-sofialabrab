@@ -47,6 +47,7 @@ int is_valid(Node* n)
 {
   int i,j,k,p;
 
+  int numcomprob;
   int * comprobacion = (int *)calloc(10, sizeof(int));
   for(i = 0; i < 9; i++)
   {
