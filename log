@@ -617,3 +617,17 @@ Fri May 13 02:35:12 UTC 2022:
  tests:  8|1
 total_score: 60/70
 c35361f
+Fri May 13 15:04:40 UTC 2022: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:152:25: error: comparison between pointer and integer [-Werror]
+       if(n->sudo[i][j]  == NULL) return NULL;
+                         ^~
+sudoku.c:152:41: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       if(n->sudo[i][j]  == NULL) return NULL;
+                                         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b843ba4
