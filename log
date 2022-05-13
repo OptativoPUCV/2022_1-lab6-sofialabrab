@@ -242,3 +242,24 @@ sudoku.c:147:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 67f715a
+Fri May 13 01:44:35 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c:88:5: error: expected identifier or ‘(’ before ‘return’
+     return 1;
+     ^~~~~~
+sudoku.c:89:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+sudoku.c: In function ‘is_valid’:
+sudoku.c:83:3: error: control reaches end of non-void function [-Werror=return-type]
+   }
+   ^
+sudoku.c: In function ‘DFS’:
+sudoku.c:147:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+dbe8514

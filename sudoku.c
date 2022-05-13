@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n)
 {
   int i,j,k,p;
-  int numcomprob;
+  /*int numcomprob;
   //int * comprobacion = (int *)calloc(10, sizeof(int));
   for(i = 0; i < 9; i++)
   {
@@ -67,7 +67,7 @@ int is_valid(Node* n)
       if(numcomprob == 1) return 0;
     }  
     
-  }
+  }*/
   k = 0;
   while(k < 9)
   {
