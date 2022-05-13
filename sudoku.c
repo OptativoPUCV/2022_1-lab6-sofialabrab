@@ -165,9 +165,9 @@ Node* DFS(Node* initial, int* cont)
   {
     Node* n= top(S); 
     pop(S);
-    *cont = *cont -1;
-    estado = is_final(n);
-    if(estado == 1) return n;
+    *cont = *cont - 1;
+   // estado = is_final(n);
+    if(is_final(n) == 1) return n;
     else
     {
       List* l=get_adj_nodes(n);
