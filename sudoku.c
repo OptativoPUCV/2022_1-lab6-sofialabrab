@@ -150,7 +150,7 @@ int is_final(Node* n)
   {
     for(int j = 0; j < 9; j++)
     {
-      if(n->sudo[i][j] == NULL) return 2;
+      //if(n->sudo[i][j] == NULL) return 2;
       if(n->sudo[i][j]  == 0) return 0;
     }   
   }
