@@ -56,6 +56,30 @@ int is_valid(Node* n)
       numcomprob = n->sudo[i][j];
       if(numcomprob == 1) return 0;
     }  
+    
+  }
+  for(i = 0; i < 9; i++)
+  {
+    for(j = 0; j < 9; j++)
+    {
+      int * comprobacion = (int *)calloc(10, sizeof(int));
+      numcomprob = n->sudo[i][j];
+      if(numcomprob == 1) return 0;
+    }  
+    
+  }
+  k = 0;
+  while(k < 9)
+  {
+    for(p=0;p<9;p++)
+    {
+      i=3*(k/3) + (p/3) ;
+      j=3*(k%3) + (p%3) ;
+       printf("%d ",nodo->sudo[i][j]);
+      if(p%3 == 2) printf("\n");
+    }
+}
+      
   }
   
   
@@ -102,7 +126,7 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont)
 {
-  Stack* S = createStack();
+ /* Stack* S = createStack();
   push(S, initial);
   while(!is_empty(S)){
      Node* n= top(S); pop(S);
@@ -116,7 +140,7 @@ Node* DFS(Node* initial, int* cont)
         push(S,adj);
         adj=next(l);
      }
-  }
+  }*/
 
   return n;  
   
