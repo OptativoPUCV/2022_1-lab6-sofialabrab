@@ -799,3 +799,22 @@ Fri May 13 15:19:10 UTC 2022:
  tests:  8|1
 total_score: 60/70
 e56774f
+Fri May 13 15:24:00 UTC 2022: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:152:10: error: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Werror=int-conversion]
+   printf(n->sudo[0][2]);
+          ^
+In file included from test.c:1:0:
+/usr/include/stdio.h:318:12: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern int printf (const char *__restrict __format, ...);
+            ^~~~~~
+In file included from test.c:5:0:
+sudoku.c:152:3: error: format not a string literal and no format arguments [-Werror=format-security]
+   printf(n->sudo[0][2]);
+   ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4daf798
