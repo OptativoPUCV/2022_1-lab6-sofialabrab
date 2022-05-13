@@ -140,10 +140,10 @@ Node* DFS(Node* initial, int* cont)
         push(S,adj);
         adj=next(l);
      }
-  }*/
+  }
 
- // return n;  
-  
+  return n; */ 
+
 }
 
 
