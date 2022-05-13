@@ -536,3 +536,17 @@ sudoku.c:179:11: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 8d7ce85
+Fri May 13 02:20:28 UTC 2022: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:168:11: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+     *cont = cont -1;
+           ^
+sudoku.c:179:17: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+           *cont = cont + 1;
+                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+af6c73f
