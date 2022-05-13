@@ -92,7 +92,7 @@ int is_valid(Node* n)
       i=3*(k/3) + (p/3) ;
       j=3*(k%3) + (p%3) ;
       int * comprobacion = (int *)calloc(10, sizeof(int));
-      numcomprob = n->sudo[j][i];
+      numcomprob = n->sudo[i][j];
       if(numcomprob != 0)
       {
         if(comprobacion[numcomprob] == 1) return 0;
@@ -143,8 +143,17 @@ List* get_adj_nodes(Node* n)
 }
 
 
-int is_final(Node* n){
-    return 0;
+int is_final(Node* n)
+{
+  /*for(int i = 0; i < 9; i++)
+  {
+    for(int j = 0; j < 9; j++)
+    {
+        
+    }
+      
+  }*/
+  return 0;
 }
 
 Node* DFS(Node* initial, int* cont)
