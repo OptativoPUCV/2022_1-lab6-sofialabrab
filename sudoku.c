@@ -105,14 +105,7 @@ int is_valid(Node* n)
     }
     k++; 
   }
-    printf("\n");
-  for(i=0 ; i <9 ; i++){
-    for(j=0 ; j <9 ; j++){
-      printf(" %i ", n->sudo[i][j]);
-    }
-    printf("\n");
-  }
-    printf("\n");
+ 
   
 
   return 1;
@@ -152,24 +145,16 @@ List* get_adj_nodes(Node* n)
 
 int is_final(Node* n)
 {
-  if(n == NULL){
-    printf("Final");
-    return 2;
-  } 
-  printf("\n");
-  printf("\n");
+  if(n == NULL) return 2;
+ 
   for(int i = 0; i < 9; i++)
   {
     for(int j = 0; j < 9; j++)
     {
-      
-      
-      //if(n->sudo[i][j] == NULL) return 2;
       if(n->sudo[i][j]  == 0) return 0;
     }   
-      printf("\n");
+     
   }
-  printf("\n");
   return 1;
 }
 
