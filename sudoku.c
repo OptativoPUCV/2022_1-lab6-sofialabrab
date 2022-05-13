@@ -157,7 +157,7 @@ int is_final(Node* n)
 
 Node* DFS(Node* initial, int* cont)
 {
-  cont = 1;
+  *cont = 1;
   int estado;
   Stack* S = createStack();
   push(S, initial);
