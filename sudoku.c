@@ -149,15 +149,18 @@ int is_final(Node* n)
     printf("Final");
     return 2;
   } 
-  printf("%i", n->sudo[0][2]);
   for(int i = 0; i < 9; i++)
   {
     for(int j = 0; j < 9; j++)
     {
+      
+      printf("%i", n->sudo[i][j]);
       //if(n->sudo[i][j] == NULL) return 2;
       if(n->sudo[i][j]  == 0) return 0;
     }   
+      printf("\n");
   }
+  printf("\n");
   return 1;
 }
 
