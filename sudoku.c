@@ -157,17 +157,17 @@ int is_final(Node* n)
 
 Node* DFS(Node* initial, int* cont)
 {
- // int estado;
+  int estado;
   Stack* S = createStack();
   *cont = 1;
   push(S, initial);
-  while(get_size(S) != 0)
+  while((get_size(S)) != 0)
   {
-    Node* n= top(S); 
+    Node* n = top(S); 
     pop(S);
     *cont = *cont - 1;
-   // estado = is_final(n);
-    if(is_final(n) == 1) return n;
+    estado = is_final(n);
+    if(estado == 1) return n;
     else
     {
       List* l=get_adj_nodes(n);
