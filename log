@@ -392,3 +392,18 @@ sudoku.c:145:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 7e23e49
+Fri May 13 02:01:55 UTC 2022: 
+ sudoku.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:160:10: error: ‘null’ undeclared (first use in this function)
+   return null;
+          ^~~~
+sudoku.c:160:10: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:162:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+e442646
